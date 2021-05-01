@@ -12,10 +12,11 @@
 [core]
   pager = less -FRSX
 	editor = '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -n -w
+	ignorecase = false
 
 [alias]
   co = checkout
-  st = status -sb
+	st = status
   br = branch
   ci = commit
   fo = fetch origin
@@ -37,6 +38,8 @@
 
   # Removes a file from the index
   unstage = reset HEAD --
+	gaa = add .
+	gcmsg = commit -m
 
 [help]
   autocorrect = 1
@@ -48,4 +51,9 @@
   mergeoptions = --no-edit
 [user]
 	email = pifoupif@hotmail.com
-	name = pierre-francois de rouge
+	name = Pierre-François de Rougé
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
