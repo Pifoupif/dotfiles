@@ -26,10 +26,6 @@ export PATH="${HOME}/.pyenv/bin:${PATH}" # Needed for Linux/WSL
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1 # https://github.com/pyenv/pyenv-virtualenv/issues/135
 type -a pyenv > /dev/null && eval "$(pyenv init -)" && eval "$(pyenv virtualenv-init -)" && RPROMPT+='[🐍 $(pyenv_prompt_info)]'
 
-# nvm
-export NVM_DIR="$HOME/.nvm"
-. "$NVM_DIR/nvm.sh"
-
 #enforce https always
 export HTTPS=1
 export DISABLE_SPRING=1
@@ -46,7 +42,7 @@ export PATH="./bin:./node_modules/.bin:${PATH}:/usr/local/sbin"
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
-export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
+
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -59,3 +55,8 @@ if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.i
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc' ]; then . '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'; fi
+
+
+
+
+
